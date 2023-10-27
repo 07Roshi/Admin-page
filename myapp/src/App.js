@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AdminPage from './AdminPage';
-import UserDetail from './UserDetail';
+import AdminPage from './Pages/AdminPage';
+import UserDetail from './Pages/UserDetail';
 import user1 from './images/user1.jpg';
 import user2 from './images/user2.jpg';
 import user3 from './images/user3.jpg';
