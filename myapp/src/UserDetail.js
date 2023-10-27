@@ -9,9 +9,7 @@ const UserDetail = ({ users }) => {
     <div className="min-h-screen bg-gray-200 flex items-center justify-center">
       <div className="p-4 rounded bg-gradient-to-r from-indigo-400 to-cyan-400">
         <div className="flex items-center justify-start mb-4">
-          <div className="p-2 bg-blue-600 rounded-full">
-            <img src={user.image} alt={user.name} className="w-8 h-8 rounded-full" />
-          </div>
+            <img src={user.image} alt={user.name} className="w-12 h-12 rounded-full" />
           <div className="ml-2">
             <h2 className="text-lg font-semibold">{user.name}</h2>
             <p className="text-gray-700">{user.role}</p>
@@ -22,7 +20,7 @@ const UserDetail = ({ users }) => {
           {user.projects.map((project) => (
             <div key={project.id} className="p-4 bg-white rounded shadow hover:bg-gray-100">
               <div className="flex items-center mb-2">
-                <img src={user.image} alt={project.title} className="w-8 h-8 rounded-full" />
+                <img src={project.p} alt={project.title} className="w- h-8 rounded-full" />
                 <h4 className="text-md font-semibold ml-2">{project.title}</h4>
               </div>
               <p>{project.description}</p>
@@ -34,7 +32,7 @@ const UserDetail = ({ users }) => {
           {user.services.map((service) => (
             <div key={service.id} className="p-4 bg-white rounded hover:bg-gray-100">
               <div className="flex items-center mb-2">
-                <img src={user.image} alt={service.title} className="w-8 h-8 rounded-full" />
+                <img src={service.s} alt={service.title} className="w-8 h-8 rounded-full" />
                 <h4 className="text-md font-semibold ml-2">{service.title}</h4>
               </div>
               <p>{service.description}</p>
@@ -46,7 +44,7 @@ const UserDetail = ({ users }) => {
           {user.testimonials.map((testimonial) => (
             <div key={testimonial.id} className="p-4 bg-white rounded shadow hover:bg-gray-100">
               <div className="flex items-center mb-2">
-                <img src={user.image} alt={testimonial.name} className="w-8 h-8 rounded-full" />
+                <img src={testimonial.t} alt={testimonial.name} className="w-8 h-8 rounded-full" />
                 <h4 className="text-md font-semibold ml-2">{testimonial.name}</h4>
               </div>
               <p>{testimonial.comment}</p>
